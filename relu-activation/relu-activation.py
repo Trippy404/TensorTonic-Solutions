@@ -1,0 +1,18 @@
+import numpy as np
+
+def relu(x) -> np.ndarray:
+    """
+    Returns a NumPy array with the same shape as x.
+    """
+    # Write code here
+    x=np.asarray(x,dtype=float)
+    # relu=[]
+    # for r in x:
+    #     if r <= 0:
+    #         relu.append(0.0)
+    #     else:
+    #         relu.append(r)
+
+    # return np.asarray(relu)
+    return np.asarray(np.maximum(0.0,x))
+    
